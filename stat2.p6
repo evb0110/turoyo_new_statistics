@@ -11,10 +11,6 @@ my Regex %words =
      šuġlayḏ  => / << šuġlayḏ  /,
      ;
 
-#`(
->>>>
-)
-
 my Regex $tobold ;          # assigned in BEGIN block
 my Regex $tobold_contexts;  # assigned in BEGIN block
 
