@@ -11,10 +11,6 @@ my Regex %words =
      šuġlayḏ  => / << šuġlayḏ  /,
      ;
 
-#`(
->>>>
-)
-
 my Regex $tobold ;          # assigned in BEGIN block
 my Regex $tobold_contexts;  # assigned in BEGIN block
 
@@ -98,13 +94,11 @@ for %words.kv -> $word, $reg_word { # BEGIN WORDS LOOP
   printf "- %-15s", "word: $word; ";
   printf " %-15s", "easyword: {$easyword.gist}... ";
 
-
   my Int %speaker_matches;
   my Int %village_matches;
   my Int $total_matches;
   my Str @output;
   my Str @output_stat;
-
 
   for %corpus_files.kv -> $corpus, @filenames {
     for @filenames -> $file {
